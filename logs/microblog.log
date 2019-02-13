@@ -86,3 +86,8 @@ Traceback (most recent call last):
     page, app.config['POSTS_PER_PAGE'], False)
 KeyError: 'POSTS_PER_PAGE'
 2019-02-13 15:00:16,763 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:43]
+2019-02-13 15:33:35,436 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:45]
+2019-02-13 15:42:57,348 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:45]
+2019-02-13 16:12:23,804 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:45]
+2019-02-13 16:12:40,984 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:45]
+2019-02-13 16:13:08,863 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:45]
