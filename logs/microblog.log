@@ -18,3 +18,9 @@ Traceback (most recent call last):
     page, app.cofig['POSTS_PER_PAGE'], False)
 AttributeError: 'Flask' object has no attribute 'cofig'
 2019-02-13 18:40:33,622 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:47]
+2019-02-14 10:42:53,330 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:47]
+2019-02-14 12:43:15,114 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:45:24,285 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:45:44,978 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:49:19,552 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:56:58,093 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
