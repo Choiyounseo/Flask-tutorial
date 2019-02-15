@@ -1,4 +1,46 @@
-2019-02-15 12:31:30,505 ERROR: Exception on /index [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
+2019-02-13 18:40:00,378 ERROR: Exception on /user/asdf [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/app/routes.py", line 109, in user
+    page, app.cofig['POSTS_PER_PAGE'], False)
+AttributeError: 'Flask' object has no attribute 'cofig'
+2019-02-13 18:40:33,622 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:47]
+2019-02-14 10:42:53,330 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:47]
+2019-02-14 12:43:15,114 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:45:24,285 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:45:44,978 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:49:19,552 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 12:56:58,093 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:49]
+2019-02-14 14:41:25,142 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:42:03,499 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:44:09,989 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:45:58,995 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:48:41,283 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:49:14,971 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 14:50:20,789 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 15:08:27,595 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 15:46:16,026 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 15:46:22,054 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 17:32:12,033 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 17:37:03,231 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 17:41:20,509 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-14 17:46:37,030 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:52]
+2019-02-15 11:40:05,463 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
+2019-02-15 12:31:26,791 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
+2019-02-15 12:31:30,220 ERROR: Exception on /index [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -53,63 +95,3 @@ Traceback (most recent call last):
   File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 1776, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
-2019-02-15 12:31:35,545 ERROR: Exception on /index [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/main/routes.py", line 46, in index
-    prev_url=prev_url)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
-    context, ctx.app)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
-    rv = template.render(context)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/templates/index.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/templates/base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
-    {%- block html %}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
-    {% block body -%}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 21, in block "body"
-    {% block navbar %}
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/templates/base.html", line 17, in block "navbar"
-    <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
-    force_external=external)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
-2019-02-15 12:51:17,548 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
-2019-02-15 13:01:13,677 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
-2019-02-15 13:04:40,252 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
-2019-02-15 13:08:34,247 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
-2019-02-15 13:13:43,527 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:74]
