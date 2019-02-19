@@ -1,16 +1,12 @@
-2019-02-18 17:17:31,275 ERROR: Exception on /favicon.ico [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
+2019-02-19 13:07:26,119 ERROR: Exception on /export_posts [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
 
 During handling of the above exception, another exception occurred:
 
@@ -19,40 +15,42 @@ Traceback (most recent call last):
     response = self.full_dispatch_request()
   File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1644, in handle_http_exception
-    return handler(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/errors/handlers.py", line 7, in not_found_error
-    return render_template('404.html'), 404
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: 404.html
-2019-02-18 17:17:31,283 ERROR: Exception on /favicon.ico [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
   File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1791, in dispatch_request
-    self.raise_routing_exception(req)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1774, in raise_routing_exception
-    raise request.routing_exception
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/ctx.py", line 336, in match_request
-    self.url_adapter.match(return_rule=True)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 1581, in match
-    raise NotFound()
-werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/app/main/routes.py", line 207, in export_posts
+    current_user.launch_task('export_posts', _('Exporting posts...'))
+  File "/Users/youns/Documents/Vuno/flask_tutorial/app/models.py", line 107, in launch_task
+    *args, **kwargs)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 316, in enqueue
+    job_id=job_id, at_front=at_front, meta=meta)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 263, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 341, in enqueue_job
+    pipe.execute()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/client.py", line 3514, in execute
+    self.shard_hint)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to None:6379. Connection refused.
+2019-02-19 13:07:56,151 ERROR: Exception on /export_posts [GET] [in /Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
 
 During handling of the above exception, another exception occurred:
 
@@ -61,24 +59,40 @@ Traceback (most recent call last):
     response = self.full_dispatch_request()
   File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1713, in handle_user_exception
-    return self.handle_http_exception(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1644, in handle_http_exception
-    return handler(e)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/app/errors/handlers.py", line 7, in not_found_error
-    return render_template('404.html'), 404
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/jinja2/loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: 404.html
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/app/main/routes.py", line 207, in export_posts
+    current_user.launch_task('export_posts', _('Exporting posts...'))
+  File "/Users/youns/Documents/Vuno/flask_tutorial/app/models.py", line 107, in launch_task
+    *args, **kwargs)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 316, in enqueue
+    job_id=job_id, at_front=at_front, meta=meta)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 263, in enqueue_call
+    job = self.enqueue_job(job, at_front=at_front)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/rq/queue.py", line 341, in enqueue_job
+    pipe.execute()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/client.py", line 3514, in execute
+    self.shard_hint)
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/youns/Documents/Vuno/flask_tutorial/venv/lib/python3.7/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to None:6379. Connection refused.
+2019-02-19 13:09:27,014 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:82]
+2019-02-19 13:09:34,778 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:82]
+2019-02-19 13:11:07,639 INFO: Microblog startup [in ./app/__init__.py:82]
+2019-02-19 13:11:12,676 INFO: Microblog startup [in /Users/youns/Documents/Vuno/flask_tutorial/app/__init__.py:82]
+2019-02-19 13:11:32,675 INFO: Microblog startup [in ./app/__init__.py:82]
+2019-02-19 13:11:32,703 ERROR: Unhandled exception [in ./app/tasks.py:63]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 40, in export_posts
+    user = User.query.get(user_id)
+NameError: name 'User' is not defined
